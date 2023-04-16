@@ -1,0 +1,45 @@
+.bestseller-card.background-dark {
+  background-color: #030303;
+
+  h5 {
+    color: white;
+  }
+}
+
+.bestseller-card {
+  width: 23%;
+  padding-top: 100px;
+  margin-left: 8px;
+  margin-right: 3px;
+
+  .bestseller-card-content {
+    left: 18px;
+    top: 55px;
+  }
+
+  h5 {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+    color: #767676;
+  }
+
+  h4 {
+    font-size: 22px;
+    line-height: 38px;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 100;
+    padding-right: 12px;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}

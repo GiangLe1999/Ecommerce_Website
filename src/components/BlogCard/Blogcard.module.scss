@@ -1,0 +1,57 @@
+@use "../../App.scss" as *;
+
+.blog-card {
+  .card-image {
+    overflow: hidden;
+  }
+
+  &:hover {
+    @include transition;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+
+    img {
+      @include transition;
+      scale: 110%;
+    }
+  }
+
+  img {
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+  }
+
+  .blog-content {
+    padding: 15px 15px 25px 15px;
+
+    .section-heading {
+      font-size: 26px;
+      line-height: 32px;
+      font-weight: 500;
+    }
+
+    h5 {
+      max-width: 280px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: 18px;
+      color: var(--text-color);
+    }
+
+    .date {
+      font-size: 13px;
+      line-height: 24px;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      font-weight: 400;
+      color: var(--text-color);
+      padding: 0;
+    }
+
+    .description {
+      font-size: 13px;
+      line-height: 22px;
+      color: var(--text-color);
+    }
+  }
+}

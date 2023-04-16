@@ -1,0 +1,49 @@
+.footer-section {
+  background-color: var(--third-color);
+
+  footer:not(:first-child) {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .top-footer {
+    .subscribe-button {
+      background-color: var(--third-color);
+      padding: 8px 18px;
+    }
+
+    h4 {
+      font-size: 20px;
+    }
+  }
+  .middle-footer {
+    .social-icon-block {
+      position: relative;
+      background-color: rgba(153, 153, 153, 0.1);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+
+      img {
+        position: absolute;
+        width: 45%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    h4 {
+      font-size: 20px;
+    }
+
+    a,
+    address {
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+
+  .bottom-footer {
+    font-size: 14px;
+  }
+}

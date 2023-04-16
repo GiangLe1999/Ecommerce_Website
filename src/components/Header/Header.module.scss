@@ -1,0 +1,70 @@
+@use "../../App.scss" as *;
+
+.top-header {
+  background-color: var(--primary-color);
+  border-bottom: 1px solid var(--secondary-color);
+  font-size: 12px;
+}
+
+.middle-header {
+  background-color: var(--primary-color);
+  font-size: 13px;
+
+  .search-icon {
+    background-color: var(--hover-color);
+  }
+
+  .middle-header-links {
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .cart-badge {
+    padding: 0.25em 0.65em;
+    margin-top: 5px;
+    margin-bottom: 2px;
+  }
+}
+
+.bottom-header {
+  background-color: var(--third-color);
+
+  .categories {
+    border-right: 1px solid var(--secondary-color);
+  }
+
+  .categories button,
+  a {
+    color: white;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .categories button {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .categories-list {
+    width: 100%;
+    background-color: var(--primary-color);
+    transform: translate(0px, 49px) !important;
+  }
+
+  .category-item {
+    padding: 20px;
+    @include transition;
+    margin-bottom: 3px;
+    border-bottom: solid 1px var(--secondary-color);
+
+    &:hover {
+      background-color: transparent;
+      color: var(--hover-color);
+    }
+  }
+}

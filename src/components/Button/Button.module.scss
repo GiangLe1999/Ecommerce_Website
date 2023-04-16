@@ -1,0 +1,15 @@
+@use "../../App.scss" as *;
+
+.wrapper {
+  @include transition;
+  background-color: var(--third-color);
+  color: white;
+  font-size: 14px;
+  padding: 10px 26px;
+  border-radius: 25px;
+
+  &:hover {
+    background-color: var(--hover-color);
+    color: var(--text-color);
+  }
+}
