@@ -6,7 +6,7 @@ const listLinks = [
     content: "Home",
   },
   {
-    to: "/our-store",
+    to: "/store",
     content: "Our Store",
   },
   {

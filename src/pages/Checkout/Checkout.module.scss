@@ -1,0 +1,175 @@
+.checkoutWrapper {
+  background-color: var(--main-background-color);
+}
+
+.checkoutLeftWrapper {
+  max-width: 800px;
+  background-color: #fff;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+
+  @media (max-width: 992px) {
+    padding-left: 24px;
+  }
+  @media (max-width: 1200px) {
+    padding-left: 24px;
+  }
+  @media (max-width: 1400px) {
+    padding-left: 24px;
+  }
+  @media (min-width: 1400px) {
+    padding-left: 108px;
+  }
+  @media (min-width: 1700px) {
+    padding-left: 200px;
+  }
+}
+
+.checkoutLeftContent {
+  .companyName {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  .breadCrumb {
+    margin-left: -26px;
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  p {
+    color: #777777;
+  }
+
+  .logoutBtn {
+    padding: 10px 10px 10px 0;
+    border-radius: 0.3rem;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    color: var(--link-hover-color);
+    font-size: 13px;
+    &:hover {
+      color: #609dff;
+    }
+  }
+
+  input[type="checkbox"] {
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(1.5); /* IE */
+    -moz-transform: scale(1.5); /* FF */
+    -webkit-transform: scale(1.5); /* Safari and Chrome */
+    -o-transform: scale(1.5); /* Opera */
+    transform: scale(1.5);
+    padding: 10px;
+    margin-left: 2px;
+  }
+
+  .customerInformationForm {
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 30px;
+
+    input,
+    select {
+      color: #4e4e4e;
+      background-color: #fff;
+    }
+
+    input,
+    select {
+      &:focus {
+        box-shadow: none;
+        border-color: #4e4e4e;
+        background-color: #dbdbdb4d;
+      }
+    }
+
+    .oneThird {
+      width: 33.33333%;
+    }
+
+    .normalInput {
+      padding-top: 17px;
+      padding-bottom: 17px;
+    }
+
+    .continueBtn {
+      border-radius: 10px;
+      background-color: rgb(207, 1, 1);
+
+      &:hover {
+        background-color: rgb(235, 39, 39);
+        color: #fff;
+      }
+    }
+  }
+}
+
+.checkoutRightContent {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+
+  .checkoutItem {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d8d8d8;
+  }
+
+  .productImageWrapper {
+    width: 35%;
+  }
+
+  .productImageContainer {
+    width: 120px;
+    height: 120px;
+    border-radius: 0.3rem;
+    position: relative;
+    border: 1px solid #d8d8d8;
+
+    img {
+      width: 100%;
+    }
+
+    .badge {
+      width: 30px;
+      height: 30px;
+      top: -19px;
+      background-color: #4e4e4e;
+      right: -13px;
+      border-radius: 50%;
+      position: absolute;
+      font-weight: 500;
+      line-height: 22px;
+      font-size: 14px;
+    }
+  }
+
+  .productInfo {
+    color: #777777;
+
+    h3 {
+      color: var(--text-color);
+      font-size: 18px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .totalTitle {
+    font-weight: 600;
+  }
+
+  .totalPrice {
+    font-size: 23px;
+    font-weight: 500;
+  }
+}

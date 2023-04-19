@@ -1,5 +1,10 @@
+.special-product-card {
+  max-height: 431px;
+}
+
 .avatar-card {
   width: 50%;
+  height: 100%;
 
   .avatar-badge {
     top: 10px;
@@ -9,6 +14,7 @@
     z-index: 999;
     border-radius: 10px;
     font-weight: 400;
+    padding: 0.55em 0.65em;
   }
 
   .wishlist-icon {
@@ -23,14 +29,14 @@
 
   .brand {
     color: var(--title-color);
-    font-size: 13px;
+    font-size: 14px;
     margin-bottom: 18px;
   }
 
   .title {
     max-width: 350px;
     line-height: 25px;
-    font-size: 15px;
+    font-size: 17px;
     color: var(--text-color);
     overflow: hidden;
     text-overflow: ellipsis;
@@ -40,7 +46,8 @@
   }
 
   .price {
-    margin: 10px 0;
+    font-size: 18px;
+    margin: 12px 0;
     color: #a3a3a3;
     .red-p {
       color: #dc3545;
@@ -49,22 +56,23 @@
 
   .days-left {
     color: #a3a3a3;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
 
     b {
       color: var(--text-color);
     }
 
     .time-badge {
-      font-size: 1rem;
+      font-size: 1.2rem;
       line-height: 1.8;
     }
   }
 
   .quantity-left {
     p {
-      font-size: 13px;
+      font-size: 15px;
       color: #a3a3a3;
     }
   }

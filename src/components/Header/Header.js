@@ -11,7 +11,7 @@ function Header() {
     <>
       {/* TOP HEADER SECTION */}
       <header className={`${styles["top-header"]} py-3`}>
-        <div className="container">
+        <div className="container-xxl">
           <div className="row">
             <div className="col-6">
               <p className="text-white">
@@ -34,7 +34,7 @@ function Header() {
       <header
         className={`${styles["middle-header"]} py-3 d-flex align-items-center`}
       >
-        <div className="container">
+        <div className="container-xxl">
           <div className="row align-items-center">
             <div className="col-2">
               <h1 className="fs-3 m-0">
@@ -66,8 +66,11 @@ function Header() {
               >
                 <MiddleHeaderLinks />
                 <div className="d-flex align-items-center">
-                  <Link className="d-flex align-items-center text-white gap-1">
-                    <img src="images/cart.svg" alt="Cart icon" />
+                  <Link
+                    to="/cart"
+                    className="d-flex align-items-center text-white gap-1"
+                  >
+                    <img src="/images/cart.svg" alt="Cart icon" />
                     <div className="d-flex flex-column align-items-center justify-content-center">
                       <span
                         className={`${styles["cart-badge"]} badge bg-white text-dark w-50 rounded-pill`}
@@ -86,7 +89,7 @@ function Header() {
 
       {/* BOTTOM HEADER SECTION */}
       <header className={`${styles["bottom-header"]} py-3`}>
-        <div className="container">
+        <div className="container-xxl">
           <div className="row">
             <div className="col-12 d-flex gap-4">
               <div className="">
@@ -99,7 +102,7 @@ function Header() {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <img src="images/menu.svg" alt="Categories icon" />
+                    <img src="/images/menu.svg" alt="Categories icon" />
                     <span className="me-5 py-2">Shop Categories</span>
                   </button>
 

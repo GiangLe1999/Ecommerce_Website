@@ -3,10 +3,18 @@
 .wrapper {
   @include transition;
   background-color: var(--third-color);
+  text-align: center;
+  min-width: 100px;
+  min-height: 35px;
+  border: none;
   color: white;
   font-size: 14px;
   padding: 10px 26px;
   border-radius: 25px;
+
+  span {
+    line-height: 29px;
+  }
 
   &:hover {
     background-color: var(--hover-color);

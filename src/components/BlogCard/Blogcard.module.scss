@@ -1,8 +1,15 @@
 @use "../../App.scss" as *;
 
 .blog-card {
+  margin-bottom: 15px;
+
   .card-image {
     overflow: hidden;
+    img {
+      width: 100%;
+      border-top-left-radius: 0.3rem;
+      border-top-right-radius: 0.3rem;
+    }
   }
 
   &:hover {
@@ -13,11 +20,6 @@
       @include transition;
       scale: 110%;
     }
-  }
-
-  img {
-    border-top-left-radius: 0.3rem;
-    border-top-right-radius: 0.3rem;
   }
 
   .blog-content {
@@ -54,4 +56,8 @@
       color: var(--text-color);
     }
   }
+}
+
+.grid6 {
+  margin-bottom: 10px;
 }

@@ -1,9 +1,20 @@
+import { useLocation, Link } from "react-router-dom";
+
 import Button from "../Button";
 import styles from "./Blogcard.module.scss";
 
 function BlogCard() {
+  const location = useLocation();
+  let columnWidth = 3;
+  if (location.pathname === "/blogs") {
+    columnWidth = 6;
+  }
+
   return (
-    <div className="col-3">
+    <Link
+      to="/blogs/:title"
+      className={`col-${columnWidth} ${styles[`grid${columnWidth}`]}`}
+    >
       <div className={`${styles["blog-card"]} bg-white rounded-3 shadow`}>
         <div className={`${styles["card-image"]}`}>
           <img className="img-fluid" src="images/blog-1.jpg" alt="Blog 1" />
@@ -17,10 +28,10 @@ function BlogCard() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
             quaerat accusamus officia
           </p>
-          <Button to="/blog/:id">READ MORE</Button>
+          <Button to="/blogs/:title">READ MORE</Button>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 

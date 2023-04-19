@@ -1,0 +1,24 @@
+.wrapper {
+  width: 100%;
+  padding: 40px 40px 25px 40px;
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(212, 212, 212, 0.39);
+    border: none;
+
+    &:focus {
+      background-color: rgba(212, 212, 212, 0.39);
+    }
+  }
+
+  textarea {
+    margin-bottom: 30px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}

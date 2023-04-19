@@ -1,0 +1,11 @@
+.backBtn {
+  font-size: 16px;
+  color: #777777;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--link-hover-color);
+  }
+}

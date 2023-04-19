@@ -1,0 +1,163 @@
+.wrapper {
+  background-color: var(--main-background-color);
+}
+
+.cartTable {
+  margin-bottom: 20px;
+}
+
+th {
+  color: #777777;
+}
+
+td {
+  padding: 35px;
+  color: #777777;
+  font-size: 18px;
+}
+
+.col1 {
+  width: 50%;
+}
+
+.col2 {
+  width: 15%;
+}
+
+.col3 {
+  width: 25%;
+}
+
+.productImageContainer {
+  width: 25%;
+  border-radius: 0.3rem;
+
+  img {
+    width: 100%;
+  }
+}
+
+.productInfo {
+  color: #777777;
+
+  h3 {
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 500;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+
+.inputBox {
+  position: relative;
+  width: 80px;
+  height: 50px;
+
+  &:before {
+    height: 50%;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    color: #777777;
+    font-size: 16px;
+    content: "+";
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    background-color: #e9e9e9;
+    border-top-right-radius: 10px;
+    border-left: 1px solid rgba(173, 173, 173, 0.5);
+    border-bottom: 1px solid rgba(2, 2, 2, 0.5);
+  }
+
+  &:after {
+    background-color: #e9e9e9;
+    border-bottom-right-radius: 10px;
+    padding: 3px;
+    height: 50%;
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    color: #777777;
+    font-size: 20px;
+    content: "-";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    width: 30%;
+    border-left: 1px solid rgba(173, 173, 173, 0.5);
+    border-top: 1px solid rgba(173, 173, 173, 0.5);
+  }
+
+  .input {
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto 40px;
+    border: none;
+    border-radius: 10px;
+    color: #777777;
+    padding: 20px 40px 20px 20px;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5) inset;
+    -webkit-appearance: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-inner-spin-button {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0;
+      margin: auto;
+      transform: scale(2);
+      transform-origin: right center;
+      cursor: pointer;
+    }
+
+    &::-webkit-contacts-auto-fill-button {
+      opacity: 0;
+    }
+  }
+}
+
+.removeBtn {
+  img {
+    width: 20px;
+  }
+  border-radius: 50%;
+  padding: 10px 14px;
+  min-width: initial;
+  min-height: initial;
+}
+
+.calculateSection {
+  padding: 40px 15px 20px 15px;
+  color: #777777;
+  font-size: 15px;
+
+  .subtotalTitle {
+    font-size: 18px;
+  }
+  .subtotalNumber {
+    font-size: 22px;
+  }
+}
+
+.checkOutBtn {
+  min-width: 300px;
+}
+
+.taxes {
+  color: #777777;
+  font-size: 15px;
+  margin-bottom: 20px;
+}

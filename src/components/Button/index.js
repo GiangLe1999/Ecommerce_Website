@@ -11,12 +11,19 @@ function Button({
   onClick,
   children,
   disabled,
+  type,
   className,
   ...passProps
 }) {
   let Element = "button";
   const classes = cx("wrapper", { [className]: className });
   let props = {
+    to,
+    href,
+    onClick,
+    children,
+    disabled,
+    type,
     ...passProps,
   };
 

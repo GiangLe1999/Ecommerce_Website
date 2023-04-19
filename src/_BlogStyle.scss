@@ -1,0 +1,24 @@
+.wrapper {
+  background-color: var(--main-background-color);
+
+  .contentSection {
+    padding: 0 0 0 30px;
+    color: var(--blog-text-color);
+    font-size: 15px;
+    line-height: 30px;
+    strong {
+      font-size: 16px;
+    }
+
+    .heading1 {
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: 600;
+      color: #1c1c1b;
+      padding: 20px 0 0;
+    }
+    p {
+      margin: 15px 0;
+    }
+  }
+}

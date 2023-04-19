@@ -6,6 +6,21 @@ import ProductImagesSlider from "../ProductImagesSlide";
 
 import styles from "./SpecialProduct.module.scss";
 
+const images = [
+  {
+    original: "/images/tab.jpg",
+    thumbnail: "/images/tab.jpg",
+  },
+  {
+    original: "/images/tab1.jpg",
+    thumbnail: "/images/tab1.jpg",
+  },
+  {
+    original: "/images/tab2.jpg ",
+    thumbnail: "/images/tab2.jpg",
+  },
+];
+
 function SpecialProduct() {
   return (
     <div className="col-6">
@@ -26,7 +41,11 @@ function SpecialProduct() {
                 <img src="images/wish.svg" alt="Wishlist" />
               </Link>
             </div>
-            <ProductImagesSlider />
+            <ProductImagesSlider
+              images={images}
+              showFullscreenButton={false}
+              showPlayButton={false}
+            />
           </div>
           <div
             className={`${styles["special-product-content"]} bg-white rounded-3`}

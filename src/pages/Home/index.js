@@ -1,5 +1,6 @@
 import Marquee from "react-fast-marquee";
 
+import MetaTag from "../../components/MetaTag";
 import Button from "../../components/Button";
 import BlogCard from "../../components/BlogCard";
 import Brands from "./Brands";
@@ -14,9 +15,11 @@ import BestsellerCard from "../../components/BestsellerCard";
 function Home() {
   return (
     <>
+      <MetaTag title="KitschMart Ecommerce Store" />
+
       {/* HOME SECTION 1: BANNER */}
       <section className={`${styles["home-wrapper-1"]} py-5`}>
-        <div className="container">
+        <div className="container-xxl">
           <div className="row gx-3">
             <div className="col-6">
               {/* Main Banner */}
@@ -52,7 +55,7 @@ function Home() {
 
       {/* HOME SECTION 2: SERVICES */}
       <section className={`${styles["home-wrapper-2"]} py-5`}>
-        <div className="container">
+        <div className="container-xxl">
           <div className="row">
             <div className="col-12">
               <div
@@ -68,7 +71,7 @@ function Home() {
 
       {/* HOME SECTION 3: CATEGORIES */}
       <section className={`${styles["home-wrapper-3"]}`}>
-        <div className="container bg-white shadow rounded-3 py-4 position-relative">
+        <div className="container-xxl bg-white shadow rounded-3 py-4 position-relative">
           <span className={styles.line}></span>
           <div className="row row-cols-5 gx-4">
             <Categories />
@@ -79,7 +82,7 @@ function Home() {
 
       {/* HOME SECTION 4: BRAND MARQUEE*/}
       <section className={`${styles["marquee-wrapper"]} py-5`}>
-        <div className="container">
+        <div className="container-xxl">
           <div className="row">
             <div
               className={`${styles["marquee-inner-wrapper"]} p-3 bg-white shadow rounded-3`}
@@ -95,8 +98,8 @@ function Home() {
 
       {/* HOME SECTION 5: FEATURED PRODUCTS*/}
       <section className={`${styles["featured-wrapper"]} py-5`}>
-        <div className="container px-0">
-          <div className="row gx-2">
+        <div className="container-xxl px-0">
+          <div className="row gx-3">
             <div className="col-12">
               <h3 className={`${styles["section-heading"]} py-3`}>
                 Featured Selection
@@ -114,7 +117,7 @@ function Home() {
 
       {/* HOME SECTION 6: BESTSELLER */}
       <section className={`${styles["bestseller-wrapper"]} pb-5`}>
-        <div className="container px-0">
+        <div className="container-xxl px-0">
           <div className="row gap-3">
             <BestsellerCard
               dark
@@ -152,7 +155,7 @@ function Home() {
 
       {/* HOME SECTION 7: SPECIAL PRODUCTS*/}
       <section className={`${styles["special-wrapper"]} py-5`}>
-        <div className="container">
+        <div className="container-xxl">
           <div className="row">
             <div className="col-12 px-0 py-3">
               <h3 className={`${styles["section-heading"]} py-3`}>
@@ -170,7 +173,7 @@ function Home() {
 
       {/* HOME SECTION 8: POPULAR PRODUCTS*/}
       <section className={`${styles["popular-wrapper"]} py-5`}>
-        <div className="container px-0">
+        <div className="container-xxl px-0">
           <div className="row">
             <div className="col-12">
               <h3 className={`${styles["section-heading"]} py-3`}>
@@ -178,7 +181,7 @@ function Home() {
               </h3>
             </div>
           </div>
-          <div className="row gx-2">
+          <div className="row gx-3">
             <ProductCard filterProduct />
             <ProductCard staticBanner />
             <ProductCard normalProduct />
@@ -192,7 +195,7 @@ function Home() {
 
       {/* HOME SECTION 9: BLOG */}
       <section className={`${styles["blog-wrapper"]} py-5`}>
-        <div className="container px-0">
+        <div className="container-xxl px-0">
           <div className="row">
             <div className="col-12">
               <h3 className={`${styles["section-heading"]} py-3`}>

@@ -1,0 +1,66 @@
+.wrapper {
+  padding: 1rem 0 3rem 0;
+  background-color: var(--main-background-color);
+
+  .card {
+    padding: 20px 20px 30px 20px;
+    background-color: white;
+    width: 500px;
+    margin: 30px auto;
+    border-radius: 10px;
+
+    h3 {
+      font-size: 19px;
+      font-weight: 500;
+      margin: 0 0 20px 5px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #777777;
+    }
+
+    .forgotPassword {
+      margin-left: 5px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #1c1c1b;
+
+      &:hover {
+        color: #1c1c1b;
+      }
+    }
+
+    .signupButton {
+      margin-right: 15px;
+    }
+
+    input {
+      height: 50px;
+      background-color: rgba(212, 212, 212, 0.39);
+      color: var(--color-777777);
+      font-size: 14px;
+      border-radius: 10px;
+      border-color: transparent;
+      margin-bottom: 20px;
+    }
+
+    .subTitle {
+      font-size: 15px;
+      margin-left: 5px;
+      margin-bottom: 10px;
+    }
+
+    .cancelButton {
+      margin-top: 10px;
+      margin-left: 0;
+      background-color: transparent;
+      color: var(--text-color);
+
+      &:hover {
+        background-color: #ff0f0f;
+        color: white;
+      }
+    }
+  }
+}

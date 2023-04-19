@@ -1,0 +1,341 @@
+.wrapper {
+  background-color: var(--main-background-color);
+}
+
+.productInfoWrapper {
+  border-radius: 0.3rem;
+
+  .imagesPart {
+    width: 50%;
+    .images {
+      padding: 10px;
+      border: 1px solid #ededed;
+      border-radius: 0.3rem;
+      margin-bottom: 20px;
+    }
+
+    .paymentMethod {
+      h4 {
+        font-size: 14px;
+        font-weight: 700;
+      }
+      background-color: var(--main-background-color);
+      .paymentLogo {
+        width: 10%;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.3rem;
+        padding: 10px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .detailsPart {
+    width: 48%;
+
+    p,
+    a {
+      font-size: 14px;
+      font-weight: 400;
+      color: #777777;
+      line-height: 30px;
+    }
+
+    a:hover {
+      color: var(--link-hover-color);
+    }
+
+    .productName {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 30px;
+      margin-top: -7px;
+    }
+
+    .price {
+      font-size: 18px;
+      margin-top: 15px;
+    }
+
+    .listDetails {
+      line-height: 30px;
+      li {
+        margin: 5px 0 15px 0;
+
+        strong {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .colorOption {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+    }
+
+    .sizeInfo {
+      span {
+        padding: 0 12px;
+        border: 1px solid #d8d7d7;
+      }
+      span.active {
+        border: 1px solid #575757;
+      }
+    }
+
+    .inputBox {
+      position: relative;
+      width: 80px;
+      height: 50px;
+
+      &:before {
+        height: 50%;
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        color: #080808;
+        font-size: 16px;
+        content: "+";
+        pointer-events: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        background-color: #e9e9e9;
+        border-top-right-radius: 10px;
+        border-left: 1px solid rgba(173, 173, 173, 0.5);
+        border-bottom: 1px solid rgba(2, 2, 2, 0.5);
+      }
+
+      &:after {
+        background-color: #e9e9e9;
+        border-bottom-right-radius: 10px;
+        padding: 3px;
+        height: 50%;
+        position: absolute;
+        bottom: 1px;
+        right: 1px;
+        color: #0a0a0a;
+        font-size: 20px;
+        content: "-";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+        width: 30%;
+        border-left: 1px solid rgba(173, 173, 173, 0.5);
+        border-top: 1px solid rgba(173, 173, 173, 0.5);
+      }
+
+      .input {
+        box-sizing: border-box;
+        display: block;
+        margin: 0 auto 40px;
+        border: none;
+        border-radius: 10px;
+        padding: 20px 40px 20px 20px;
+        width: 100%;
+        height: 50px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.5) inset;
+        -webkit-appearance: none;
+
+        &:focus {
+          outline: none;
+        }
+
+        &::-webkit-inner-spin-button {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          opacity: 0;
+          margin: auto;
+          transform: scale(2);
+          transform-origin: right center;
+          cursor: pointer;
+        }
+
+        &::-webkit-contacts-auto-fill-button {
+          opacity: 0;
+        }
+      }
+    }
+
+    .wishlistIcon {
+      width: 15px;
+    }
+    .compareIcon {
+      width: 19px;
+    }
+
+    .accordionIcon {
+      width: 20px;
+      font-size: 18px;
+      margin-left: 20px;
+    }
+
+    .shareBtn {
+      border-top: 1px solid rgba(0, 0, 0, 0.125);
+
+      &:active {
+        background-color: rgba(0, 0, 0, 0.125);
+      }
+
+      .btn {
+        padding: 20px;
+        font-size: 14px;
+        background-color: transparent;
+        border: none;
+        color: var(--link-hover-color);
+        border-radius: 0.3rem;
+      }
+    }
+  }
+}
+
+.descriptionWrapper {
+  h3 {
+    margin-bottom: 15px;
+    margin-left: -12px;
+  }
+
+  .descriptionContent {
+    padding: 20px 25px 30px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #777777;
+    line-height: 30px;
+  }
+}
+
+.reviewWrapper {
+  h3 {
+    margin-bottom: 15px;
+    margin-left: -12px;
+  }
+}
+
+.formWrapper {
+  padding: 30px 0;
+  color: #777777;
+  border-top: 1px solid #ededed;
+
+  .formTitle {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  label {
+    color: var(--text-color);
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(212, 212, 212, 0.39);
+    border: none;
+
+    &:focus {
+      background-color: rgba(212, 212, 212, 0.747);
+    }
+  }
+}
+
+.customerReview {
+  border-top: 1px solid #ededed;
+}
+
+.reviewContent {
+  padding: 30px 25px 30px;
+
+  .reviewHeading {
+    padding-bottom: 20px;
+
+    h4 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 15px;
+      font-weight: 400;
+      color: #777777;
+    }
+
+    .reviewBtn {
+      font-size: 15px;
+      font-weight: 400;
+      color: #777777;
+      border: none;
+      background-color: transparent;
+
+      &:hover {
+        color: var(--link-hover-color);
+      }
+    }
+  }
+
+  .customerReview {
+    padding: 20px 0;
+    margin-bottom: 10px;
+
+    .reviewSummary,
+    .customerName {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: 600;
+
+      i {
+        font-size: 15px;
+        font-weight: 400;
+        color: #777777;
+      }
+    }
+
+    .customerReviewContent {
+      margin-top: 10px;
+      font-size: 15px;
+      font-weight: 400;
+      color: #777777;
+      line-height: 30px;
+    }
+  }
+  .adminResponse {
+    margin-left: 40px;
+    border-radius: 0.3rem;
+    background-color: rgba(212, 212, 212, 0.39);
+    padding: 20px;
+
+    .adminName {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .adminResponseContent {
+      margin-top: 10px;
+      font-size: 15px;
+      font-weight: 400;
+      color: #777777;
+      line-height: 30px;
+    }
+  }
+
+  .reportBtn {
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #777777;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+      color: var(--link-hover-color);
+    }
+  }
+}

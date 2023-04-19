@@ -4,22 +4,22 @@ import styles from "./Header.module.scss";
 
 const listLinks = [
   {
-    to: "/compare",
-    img: "images/compare.svg",
+    to: "/compare-products",
+    img: "/images/compare.svg",
     alt: "Compare icon",
     content1: "Compare",
     content2: "Products",
   },
   {
     to: "/wishlist",
-    img: "images/wishlist.svg",
+    img: "/images/wishlist.svg",
     alt: "Wishlist icon",
     content1: "Favorite",
     content2: "Wishlist",
   },
   {
-    to: "/login",
-    img: "images/user.svg",
+    to: "/auth",
+    img: "/images/user.svg",
     alt: "User icon",
     content1: "Login",
     content2: "My Account",

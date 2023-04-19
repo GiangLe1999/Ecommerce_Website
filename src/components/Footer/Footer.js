@@ -8,12 +8,12 @@ function Footer() {
     <section className={`${styles["footer-section"]} text-white`}>
       {/* TOP FOOTER */}
       <footer className={`${styles["top-footer"]} py-4`}>
-        <div className="container">
+        <div className="container-xxl">
           <div className="row align-items-center">
             <div className="col-5">
               <div className="top-footer-content d-flex align-items-center gap-3">
                 <img
-                  src="images/newsletter.png"
+                  src="/images/newsletter.png"
                   alt="Newsletter Footer Icon "
                 />
                 <h4 className="mb-0">Sign Up For Newsletter</h4>
@@ -44,7 +44,7 @@ function Footer() {
 
       {/* MIDDLE FOOTER */}
       <footer className={`${styles["middle-footer"]} py-5`}>
-        <div className="container">
+        <div className="container-xxl">
           <div className="row">
             {/* Column 1 */}
             <div className="col-4">
@@ -148,7 +148,7 @@ function Footer() {
       {/* BOTTOM FOOTER */}
 
       <footer className={`${styles["bottom-footer"]} py-4`}>
-        <div className="container">
+        <div className="container-xxl">
           <div className="row">
             <div className="col-12">
               <p className="text-center">
